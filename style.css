@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/sfondo.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.descrizione{
+  width: 80vh;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 2.8vh;
+  background-color: rgba(0, 196, 79, 0.8);
+  border-radius: 5vh;
+  margin-bottom: 2vh;
+}
+
+.tablecontainer{
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border:  1px solid rgba(0, 44, 130, 1);
+  width: calc(100% / 6);
+  height: calc(100% / 6);
+  background-size: contain;
+}
+
+/* GESTIONE RIEMPIMENTO CELLE */
+.numeroRandomNero{
+  color: black;
+  position: absolute;
+}
+.numeroRandomBianco{
+  color: white;
+  position: absolute;
+}
+
+/* BOTTONI DEL CONTROLLO*/
+button{
+  padding: 0.5vh 3vw;
+  border-radius: 5px;
+  color: white;
+  font-size: 2.5vh;
+  background-color: rgba(96, 210, 235, 0.8);
+  margin: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
